@@ -1,0 +1,12 @@
+JYGEN WEBSITE
+
+LOCAL PREVIEW
+Unzip the archive and run `npm run dev` inside jygen-complete. This starts a static local server. Open the local URL printed in the terminal. The pages also work when index.html is opened directly; keep assets, about, services, and contact beside it.
+
+DEPLOYMENT
+Deploy the contents of jygen-complete as the project root, including index.html, about, services, contact, assets, robots.txt, sitemap.xml, favicon.ico, and vercel.json. The Vercel rewrites map canonical trailing-slash URLs to HTML files. If the domain changes, update canonical, Open Graph, schema, and sitemap URLs.
+
+CONTACT FORM
+The form validates in the browser, then prepares an email draft addressed to info@jygen.tech. Visitors must press Send in their email application. No database, server endpoint, authentication, or environment variables are included. When the custom backend is ready, replace the submit adapter in assets/contact-form.js with the real request and server response handling; retain the form labels and validation UI.
+
+The site includes the landing page, About, Contact, Services, and seven individual service pages. Each public page has a distinct title, description, canonical URL, and social metadata. Artwork and fonts are packaged locally.

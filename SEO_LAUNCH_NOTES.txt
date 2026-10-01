@@ -1,0 +1,5 @@
+Production domain: https://jygen.tech/
+
+Publish this version to the production domain. Verify domain ownership in Google Search Console and submit https://jygen.tech/sitemap.xml. Inspect the homepage and service URLs for indexability after deployment. Keep preview deployments out of search indexing using hosting access controls or a preview-only noindex response. Confirm redirects, canonical URLs and sitemap URLs resolve on the live host. Measure mobile Core Web Vitals on the deployed site.
+
+The progress bar measures completed page resources, not downloaded bytes or connection speed. Rankings and indexing cannot be guaranteed by metadata or structured data. No fabricated reviews, clients, awards, location or results were added.

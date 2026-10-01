@@ -1,0 +1,7 @@
+Security hardening for this static website
+
+Production security headers are configured in vercel.json. These settings are applied by Vercel, not by opening HTML files directly; another host needs equivalent headers. Content Security Policy blocks arbitrary inline JavaScript, eval, external scripts, embedded objects and framing. Existing executable inline scripts were moved into local assets. JSON-LD has exact SHA-256 hashes; regenerate those hashes after editing structured data. Inline CSS remains allowed for existing styles and animated properties.
+
+The development server binds to 127.0.0.1, limits public paths, rejects traversal and symbolic-link escapes, blocks project configuration and private files, and applies compatible headers. It is for development, not production. HSTS is configured only for HTTPS production, without subdomain or preload commitments.
+
+Contact currently uses mailto. Any future backend needs separate validation, authorization, rate limiting and secret handling. No authentication or database security is claimed by this static-site update. Live browser enforcement and deployed HTTPS still need verification.
